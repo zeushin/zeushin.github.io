@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Technical Romance</title>
+    <link>https://zeushin.github.io/index.xml</link>
+    <description>Recent content on My Technical Romance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Masher Shin</copyright>
+    <lastBuildDate>Thu, 09 Mar 2017 01:06:52 +0900</lastBuildDate>
+    <atom:link href="https://zeushin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>https://zeushin.github.io/page/about/</link>
+      <pubDate>Thu, 09 Mar 2017 01:06:52 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/page/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;masher&#34;&gt;Masher&lt;/h1&gt;
+
+&lt;p&gt;커피와 여유를 아는 낭만 개발자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://zeushin.github.io/profile2.png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
