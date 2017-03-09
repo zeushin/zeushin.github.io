@@ -3,6 +3,7 @@ title = "My Technical Romance"
 baseURL = "https://zeushin.github.io"
 theme = "ghostwriter"
 copyright = "Masher Shin"
+publishdir = "dist"
 
 [Author]
     name = "My Name"
