@@ -1,6 +1,6 @@
 languageCode = "ko-KR"
 title = "My Technical Romance"
-baseURL = "https://zeushin.github.io"
+baseURL = "https://zeushin.github.io/"
 theme = "ghostwriter"
 copyright = "Masher Shin"
 publishdir = "dist"

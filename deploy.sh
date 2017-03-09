@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+rm -rf dist
 hugo -d dist
 
 set -o errexit #abort if any command fails
