@@ -6,7 +6,7 @@ copyright = "Masher Shin"
 publishdir = "dist"
 
 [Author]
-    name = "My Name"
+    name = "Masher"
     profile = "https://github.com/zeushin"
 
 [Params]
