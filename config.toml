@@ -12,6 +12,10 @@ publishdir = "dist"
 [Params]
     intro = true
     dateFormat = "Mon, Jan 2, 2006"
+    github = "https://github.com/zeushin"
+    linkedin = "https://www.linkedin.com/in/bumcheol-shin-a7267154/"
+    twitter = "https://twitter.com/masher_s"
+    email = "zeushin@gmail.com"
 
 [Permalinks]
     post = "/:year/:month/:day/:filename/"
