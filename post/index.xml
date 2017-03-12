@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Technical Romance</title>
-    <link>https://zeushin.github.io/index.xml</link>
-    <description>Recent content on My Technical Romance</description>
+    <title>Posts on My Technical Romance</title>
+    <link>https://zeushin.github.io/post/index.xml</link>
+    <description>Recent content in Posts on My Technical Romance</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Masher Shin</copyright>
     <lastBuildDate>Sun, 12 Mar 2017 17:35:04 +0900</lastBuildDate>
-    <atom:link href="https://zeushin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeushin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>메모 습관의 힘</title>
@@ -78,22 +78,6 @@
 &lt;p&gt;앞으로 블로그를 하면서 무슨 내용을 담을까에 대한 고민이 있다.
 대부분 개발관련 기술 블로그가 될것이 뻔하지만
 책 소개, 차, 자전거, 커피집, 맛집 등등 평소 관심사나 일상에 대한 포스팅도 생각 중이다.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://zeushin.github.io/page/about/</link>
-      <pubDate>Thu, 09 Mar 2017 01:06:52 +0900</pubDate>
-      
-      <guid>https://zeushin.github.io/page/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;masher&#34;&gt;Masher&lt;/h1&gt;
-
-&lt;p&gt;커피와 여유를 아는 낭만 개발자.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://zeushin.github.io/profile2.png&#34; height=&#34;500px&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
