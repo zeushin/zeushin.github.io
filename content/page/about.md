@@ -9,4 +9,4 @@ description = "About me"
 
 커피와 여유를 아는 낭만 개발자.
 
-<img src="/profile2.png">
+<img src="/profile2.png" height="500px">
