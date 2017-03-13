@@ -3,6 +3,7 @@ date = "2017-03-12T17:35:04+09:00"
 description = "블로그를 시작하다"
 title = "메모 습관의 힘"
 name = "Masher Shin"
+tags = ["memo", "blog", "hugo"]
 
 +++
 

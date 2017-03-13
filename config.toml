@@ -4,10 +4,14 @@ baseURL = "https://zeushin.github.io/"
 theme = "ghostwriter"
 copyright = "Masher Shin"
 publishdir = "dist"
+disqusShortname = "zeushin"
 
 [Author]
     name = "Masher"
     profile = "https://github.com/zeushin"
+
+[Taxonomies]
+    tag = "tags"
 
 [Params]
     intro = true
