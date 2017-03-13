@@ -12,6 +12,24 @@
   </url>
   
   <url>
+    <loc>https://zeushin.github.io/tags/blog/</loc>
+    <lastmod>2017-03-12T17:35:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeushin.github.io/tags/hugo/</loc>
+    <lastmod>2017-03-12T17:35:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeushin.github.io/tags/memo/</loc>
+    <lastmod>2017-03-12T17:35:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zeushin.github.io/</loc>
     <lastmod>2017-03-12T17:35:04+09:00</lastmod>
     <priority>0</priority>
@@ -26,6 +44,11 @@
   <url>
     <loc>https://zeushin.github.io/post/</loc>
     <lastmod>2017-03-12T17:35:04+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeushin.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
