@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Unit testing with AppCode &middot; Masher</title>
+        <meta name="description" content="AppCode를 이용해 유닛테스트를 해보자">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.19" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://zeushin.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="My Technical Romance" href="https://zeushin.github.io/">My Technical Romance</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://zeushin.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/masher_s">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/zeushin">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/bumcheol-shin-a7267154/">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:zeushin@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Unit testing with AppCode</h1>
+    
+        <p class="post-description" itemprop="description">AppCode를 이용해 유닛테스트를 해보자</p>
+    
+    <p class="post-date">
+        <span>Published <time datetime="2017-04-22" itemprop="datePublished">Sat, Apr 22, 2017</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="https://github.com/zeushin" itemprop="url" rel="author">Masher</a>
+            </span>
+        </span>
+    </p>
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    
+
+<h1 id="add-configuration">Add Configuration</h1>
+
+<p>우선 Xcode 프로젝트에서 unit test 설정이 되어 있어야 한다. 프로젝트 타겟에 유닛테스트 타겟이 었어야 한다는 의미.
+이미 Xcode상에서 unit test를 한번이상 실행하였다면 AppCode를 실행하자.
+AppCode상에서</p>
+
+<p><strong>Run | Edit Configurations&hellip;</strong></p>
+
+<p>으로 들어가서 <strong>Test Configuration</strong>을 추가한다.
+나같은 경우는 <strong>XCTest/Kiwi</strong> 라고 되어있었다.
+<img src="/unit-test-with-appcode-01.png"></p>
+
+<ul>
+<li><strong>Name</strong> 에 적당한 이름을 지어주고(Xcode상의 타겟 이름과 같이 하면 좋다)</li>
+<li><strong>Class</strong> 는 비워두면 알아서 모든 Test파일을 참조한다.</li>
+<li><strong>Target</strong> 과 <strong>Configuration</strong> 을 Xcode 와 동일하게 지정해 준다.</li>
+</ul>
+
+<h1 id="run">Run</h1>
+
+<p>상단 툴바의 <strong>Configurations</strong> 선택에서 방금 추가한 Test configuration 을 선택하고,
+<img src="/unit-test-with-appcode-02.png">
+평소에 앱을 실행 할때와 같이 녹색 플레이 버튼인 <strong>Run</strong> 을 눌러 실행한다.</p>
+
+<h1 id="results">Results</h1>
+
+<p>테스트가 실행되면 IDE 의 바닦면에서 Run Tool Window 가 팝업되면서 진행상태가 표시 된다.
+<img src="/unit-test-with-appcode-03.png">
+테스트가 끝나고 나면 왼편에 실패한 테스트가 표시되고
+<img src="/unit-test-with-appcode-04.png">
+프로그래에서스 바에는 최종 결과를 확인할 수 있다.
+<img src="/unit-test-with-appcode-05.png"></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/appcode/">appcode</a>, 
+            
+                <a href="/tags/unit-test/">unit test</a>, 
+            
+                <a href="/tags/swift/">swift</a>, 
+            
+                <a href="/tags/ios/">ios</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Unit%20testing%20with%20AppCode&url=https%3a%2f%2fzeushin.github.io%2f2017%2f04%2f22%2funit-test-with-appcode%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzeushin.github.io%2f2017%2f04%2f22%2funit-test-with-appcode%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fzeushin.github.io%2f2017%2f04%2f22%2funit-test-with-appcode%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    <div class="comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'zeushin';
+    var disqus_identifier = 'https:\/\/zeushin.github.io\/2017\/04\/22\/unit-test-with-appcode\/';
+    var disqus_title = 'Unit testing with AppCode';
+    var disqus_url = 'https:\/\/zeushin.github.io\/2017\/04\/22\/unit-test-with-appcode\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="My Technical Romance" href="https://zeushin.github.io/">My Technical Romance</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2017 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://zeushin.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script src="https://zeushin.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://zeushin.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

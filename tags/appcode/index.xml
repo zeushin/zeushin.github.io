@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Appcode on My Technical Romance</title>
+    <link>https://zeushin.github.io/tags/appcode/index.xml</link>
+    <description>Recent content in Appcode on My Technical Romance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Masher Shin</copyright>
+    <atom:link href="https://zeushin.github.io/tags/appcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unit testing with AppCode</title>
+      <link>https://zeushin.github.io/2017/04/22/unit-test-with-appcode/</link>
+      <pubDate>Sat, 22 Apr 2017 11:33:30 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/2017/04/22/unit-test-with-appcode/</guid>
+      <description>
+
+&lt;h1 id=&#34;add-configuration&#34;&gt;Add Configuration&lt;/h1&gt;
+
+&lt;p&gt;우선 Xcode 프로젝트에서 unit test 설정이 되어 있어야 한다. 프로젝트 타겟에 유닛테스트 타겟이 었어야 한다는 의미.
+이미 Xcode상에서 unit test를 한번이상 실행하였다면 AppCode를 실행하자.
+AppCode상에서&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run | Edit Configurations&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;으로 들어가서 &lt;strong&gt;Test Configuration&lt;/strong&gt;을 추가한다.
+나같은 경우는 &lt;strong&gt;XCTest/Kiwi&lt;/strong&gt; 라고 되어있었다.
+&lt;img src=&#34;https://zeushin.github.io/unit-test-with-appcode-01.png&#34;&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; 에 적당한 이름을 지어주고(Xcode상의 타겟 이름과 같이 하면 좋다)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Class&lt;/strong&gt; 는 비워두면 알아서 모든 Test파일을 참조한다.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Target&lt;/strong&gt; 과 &lt;strong&gt;Configuration&lt;/strong&gt; 을 Xcode 와 동일하게 지정해 준다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;run&#34;&gt;Run&lt;/h1&gt;
+
+&lt;p&gt;상단 툴바의 &lt;strong&gt;Configurations&lt;/strong&gt; 선택에서 방금 추가한 Test configuration 을 선택하고,
+&lt;img src=&#34;https://zeushin.github.io/unit-test-with-appcode-02.png&#34;&gt;
+평소에 앱을 실행 할때와 같이 녹색 플레이 버튼인 &lt;strong&gt;Run&lt;/strong&gt; 을 눌러 실행한다.&lt;/p&gt;
+
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+
+&lt;p&gt;테스트가 실행되면 IDE 의 바닦면에서 Run Tool Window 가 팝업되면서 진행상태가 표시 된다.
+&lt;img src=&#34;https://zeushin.github.io/unit-test-with-appcode-03.png&#34;&gt;
+테스트가 끝나고 나면 왼편에 실패한 테스트가 표시되고
+&lt;img src=&#34;https://zeushin.github.io/unit-test-with-appcode-04.png&#34;&gt;
+프로그래에서스 바에는 최종 결과를 확인할 수 있다.
+&lt;img src=&#34;https://zeushin.github.io/unit-test-with-appcode-05.png&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
