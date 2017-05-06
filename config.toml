@@ -5,6 +5,7 @@ theme = "ghostwriter"
 copyright = "Masher Shin"
 publishdir = "dist"
 disqusShortname = "zeushin"
+googleAnalytics = "UA-98615044-1"
 
 [Author]
     name = "Masher"
