@@ -3,6 +3,7 @@ title = "안녕, 나의 구두"
 name = "Masher Shin"
 date = "2017-04-30T19:11:48+09:00"
 description = "나를 사랑하게 만드는 스토리 컬러링북"
+images = ["/hello-my-shoes-01.jpg"]
 
 +++
 <img src="/hello-my-shoes-01.jpg" height="400px">

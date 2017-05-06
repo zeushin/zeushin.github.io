@@ -15,7 +15,10 @@ disqusShortname = "zeushin"
 
 [Params]
     intro = true
+    headline = "My Technical Romance"
+    description = "A romantic developer who understands coffee and leisure"
     dateFormat = "Mon, Jan 2, 2006"
+    opengraph = true
     github = "https://github.com/zeushin"
     linkedin = "https://www.linkedin.com/in/bumcheol-shin-a7267154/"
     twitter = "https://twitter.com/masher_s"

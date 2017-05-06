@@ -4,6 +4,7 @@ description = "블로그를 시작하다"
 title = "메모 습관의 힘"
 name = "Masher Shin"
 tags = ["memo", "blog", "hugo"]
+images = ["/memo-habit.jpg"]
 
 +++
 

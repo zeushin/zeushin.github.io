@@ -4,6 +4,7 @@ description = "AppCode를 이용해 유닛테스트를 해보자"
 title = "Unit testing with AppCode"
 name = "Masher Shin"
 tags = ["appcode", "unit test", "swift", "ios"]
+images = ["/unit-test-with-appcode-01.png", "/unit-test-with-appcode-02.png", "/unit-test-with-appcode-03.png", "/unit-test-with-appcode-04.png", "/unit-test-with-appcode-05.png"]
 
 +++
 
