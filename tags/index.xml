@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My Technical Romance</title>
+    <link>https://zeushin.github.io/tags/</link>
+    <description>Recent content in Tags on My Technical Romance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Masher Shin</copyright>
+    <lastBuildDate>Sat, 22 Apr 2017 11:33:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://zeushin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Appcode</title>
+      <link>https://zeushin.github.io/tags/appcode/</link>
+      <pubDate>Sat, 22 Apr 2017 11:33:30 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/appcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://zeushin.github.io/tags/blog/</link>
+      <pubDate>Sun, 12 Mar 2017 17:35:04 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://zeushin.github.io/tags/hugo/</link>
+      <pubDate>Sun, 12 Mar 2017 17:35:04 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ios</title>
+      <link>https://zeushin.github.io/tags/ios/</link>
+      <pubDate>Sat, 22 Apr 2017 11:33:30 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memo</title>
+      <link>https://zeushin.github.io/tags/memo/</link>
+      <pubDate>Sun, 12 Mar 2017 17:35:04 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/memo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>https://zeushin.github.io/tags/swift/</link>
+      <pubDate>Sat, 22 Apr 2017 11:33:30 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unit Test</title>
+      <link>https://zeushin.github.io/tags/unit-test/</link>
+      <pubDate>Sat, 22 Apr 2017 11:33:30 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/tags/unit-test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

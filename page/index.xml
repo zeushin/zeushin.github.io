@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on My Technical Romance</title>
-    <link>https://zeushin.github.io/page/index.xml</link>
+    <link>https://zeushin.github.io/page/</link>
     <description>Recent content in Pages on My Technical Romance</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Masher Shin</copyright>
     <lastBuildDate>Thu, 09 Mar 2017 01:06:52 +0900</lastBuildDate>
-    <atom:link href="https://zeushin.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://zeushin.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>About</title>
@@ -16,14 +18,7 @@
       <pubDate>Thu, 09 Mar 2017 01:06:52 +0900</pubDate>
       
       <guid>https://zeushin.github.io/page/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;masher&#34;&gt;Masher&lt;/h1&gt;
-
-&lt;p&gt;커피와 여유를 아는 낭만 개발자.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://zeushin.github.io/profile2.png&#34; height=&#34;500px&#34;&gt;&lt;/p&gt;
-</description>
+      <description>Masher 커피와 여유를 아는 낭만 개발자.</description>
     </item>
     
   </channel>
