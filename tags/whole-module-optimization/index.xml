@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whole Module Optimization on My Technical Romance</title>
+    <link>https://zeushin.github.io/tags/whole-module-optimization/</link>
+    <description>Recent content in Whole Module Optimization on My Technical Romance</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>Masher Shin</copyright>
+    <lastBuildDate>Tue, 10 Oct 2017 18:38:52 +0900</lastBuildDate>
+    
+	<atom:link href="https://zeushin.github.io/tags/whole-module-optimization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unfinished compile with iOS11 SDK at archive</title>
+      <link>https://zeushin.github.io/2017/10/10/unfinished-compile-on-ios11-sdk/</link>
+      <pubDate>Tue, 10 Oct 2017 18:38:52 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/2017/10/10/unfinished-compile-on-ios11-sdk/</guid>
+      <description>Xcode를 최신으로 업데이트 하다 애플 느님께서 불쌍한 중생들을 위해 새로운 버전의 iOS를 선보이셨다!! 언제나 그랬듯, 이번에는 어떤 고난과 역경이 나를 괴롭힐 까 걱정하며 조심스럽게 Xcode를 최신버전으로 판올림 하였다. 인덱싱후, 새로 제안해주는 빌드세팅으로 바꾼후 눈에 보이는 몇가지 워닝들을 제거하고 나니 생각보다 수월하게 빌드가 된다!? 뭔가 찜찜하지만 난 잘 모르겠고, 일단은 밀린 일감들을 처리하고 PR(Pull Request)!!
+아카이빙이 안돼! 우리팀은 PR시에 젠킨스를 이용해서 유효성 검사를 한다. 이때 사용하는 빌드 스킴은 Ad-hoc. 설정하기 나름이지만 우리는 Release와 동일하게 세팅되어 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

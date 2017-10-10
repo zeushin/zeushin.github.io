@@ -3,17 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Should we use [weak self] in GCD &middot; Masher</title>
-        <meta name="description" content="GCD 안에서 반드시 weak self 를 사용해야 할까?">
+        <title>Unfinished compile with iOS11 SDK at archive &middot; Masher</title>
+        <meta name="description" content="swift optimization level 이 Fast, Whole Module optimization(-O -whole-module-optimization)일때 컴파일이 끝나지 않는 현상이 있다.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.27.1" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Should we use [weak self] in GCD">
-<meta property="og:description" content="GCD 안에서 반드시 weak self 를 사용해야 할까?">
+        <meta property="og:title" content="Unfinished compile with iOS11 SDK at archive">
+<meta property="og:description" content="swift optimization level 이 Fast, Whole Module optimization(-O -whole-module-optimization)일때 컴파일이 끝나지 않는 현상이 있다.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://zeushin.github.io/2017/09/26/should-we-use-weak-self-in-gcd/">
+<meta property="og:url" content="https://zeushin.github.io/2017/10/10/unfinished-compile-on-ios11-sdk/">
         <link rel="stylesheet" href="https://zeushin.github.io/dist/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -87,12 +87,12 @@ ga('send', 'pageview');
 <div class="container">
     <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
         <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Should we use [weak self] in GCD</h1>
+    <h1 class="post-title" itemprop="name headline">Unfinished compile with iOS11 SDK at archive</h1>
     
-        <p class="post-description" itemprop="description">GCD 안에서 반드시 weak self 를 사용해야 할까?</p>
+        <p class="post-description" itemprop="description">swift optimization level 이 Fast, Whole Module optimization(-O -whole-module-optimization)일때 컴파일이 끝나지 않는 현상이 있다.</p>
     
     <p class="post-date">
-        <span>Published <time datetime="2017-09-26" itemprop="datePublished">Tue, Sep 26, 2017</time></span>
+        <span>Published <time datetime="2017-10-10" itemprop="datePublished">Tue, Oct 10, 2017</time></span>
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
             <span itemprop="name">
@@ -107,88 +107,36 @@ ga('send', 'pageview');
 
     
 
-<p><img src="/should-we-use-weak-self-in-GCD-01.png" style="margin: auto"></p>
+<p><img src="/unfinished-compile-on-ios11-sdk-01.jpg" style="margin: auto"></p>
 
-<h1 id="gcd-안에서-반드시-weak-self-를-사용해야-할까">GCD 안에서 반드시 [weak self] 를 사용해야 할까?</h1>
+<h1 id="xcode를-최신으로-업데이트-하다">Xcode를 최신으로 업데이트 하다</h1>
 
-<p>라는 의문을 갖고 검색을 해보니 <a href="https://medium.com/rocknnull/ios-gcd-what-the-weak-is-going-on-d5a10fc682a">iOS — GCD what the __weak is going on?</a> 이라는 제목의 좋은 글을 발견했다.
-다만 해당 포스트는 Objective-C로 되어 있어 Swift로 컨버팅을 해 보았다.
-(<a href="https://github.com/zeushin/GCDVC">https://github.com/zeushin/GCDVC</a>)</p>
+<p>애플 느님께서 불쌍한 중생들을 위해 새로운 버전의 iOS를 선보이셨다!!
+언제나 그랬듯, 이번에는 어떤 고난과 역경이 나를 괴롭힐 까 걱정하며 조심스럽게 Xcode를 최신버전으로 판올림 하였다.
+인덱싱후, 새로 제안해주는 빌드세팅으로 바꾼후 눈에 보이는 몇가지 워닝들을 제거하고 나니 생각보다 수월하게 빌드가 된다!?
+뭔가 찜찜하지만 난 잘 모르겠고, 일단은 밀린 일감들을 처리하고 PR(Pull Request)!!</p>
 
-<p>Objective-C와 기본적으로는 같지만 약간의 차이점이 있어 공유한다.</p>
+<h1 id="아카이빙이-안돼">아카이빙이 안돼!</h1>
 
-<h2 id="gcd는-retain-cycle-을-유발하는가">GCD는 retain cycle 을 유발하는가?</h2>
+<p>우리팀은 PR시에 젠킨스를 이용해서 유효성 검사를 한다. 이때 사용하는 빌드 스킴은 Ad-hoc. 설정하기 나름이지만 우리는 Release와 동일하게 세팅되어 있다. 그런데 젠킨스 빌드가&hellip; 4시간이 지나도록 끝나지 않고 있었다. 빌드 서버인 맥프로는 굉장히 뜨겁게 달구어져 있고, 뭔가 이상함을 감지했다. 빌드가 왜 안되는 것일까? 단순한 세팅 문제일거라 생각하고 fastlane부터 차근 차근 살펴 보았다. 하지만 도무지 빌드가 되지 않았다.</p>
 
-<p>위에 링크한 <a href="https://medium.com/rocknnull/ios-gcd-what-the-weak-is-going-on-d5a10fc682a">medium의 포스트</a>는 궁극적으로 이러한 의문을 갖고 출발한다. 결론부터 이야기 하면 글로별 변수로 store 하지 않으면 어떻게 사용해도 retain cycle을 유발하지 않는다. (위에 링크한 <a href="https://medium.com/rocknnull/ios-gcd-what-the-weak-is-going-on-d5a10fc682a">medium 포스트</a>를 참고하자!)
-하지만, 그럼에도 불구하고 <code>[weak self]</code> 를 이용해야 하는 이유는 충분해 보인다.</p>
+<h1 id="역시나-삽질">역시나 삽질</h1>
 
-<h2 id="closure-안에서-self에-접근하는-3가지-방법">closure 안에서 self에 접근하는 3가지 방법</h2>
+<p>로컬에선 잘 되는데 왜 젠킨스에서만 안되는 것일까? 검색에 검색을 통해 optimization level이 뭔가 관련 있다라는것을 찾아냈고, 로컬에서도 level을 whole module optimization 으로 바꾸었더니, 컴파일이 끝나지 않고 있다!!
+원인을 찾기 위해 검색과 삽질을 반복 했으나 도저히 찾지 못하고 긴긴 추석 연휴가 찾아왔다.
+모든것을 10일 뒤의 나에게 맡겨 두고 난 푹 쉬기로 하였다. 하핳. 바이 짜이찌엔..</p>
 
-<p><a href="https://medium.com/rocknnull/ios-gcd-what-the-weak-is-going-on-d5a10fc682a">medium의 포스트</a>에서 처럼, 네비게이션 푸시로 한뎁스 들어간 어떤 뷰 컨트롤러에 버튼을 만들어 간단히 GCD를 사용해 보았다.</p>
+<h1 id="while-구문이-버그라니">While 구문이 버그라니..</h1>
 
-<p>버튼을 누르면 다른 스레드에서 글로벌 변수의 배열에 접근해 아이템을 추가하고 10초를 슬립한 후 다시 메인 스레드(UI thread)로 넘어와 배열에 접근하고 UI 객체에 접근하는 코드이다.
-핵심은 버튼을 누른 후 10초가 되기 전에 네비게이션 바의 백 버튼을 눌러 해당 뷰 컨트롤러를 스택에서 뽑아 냈을 때 어떤 결과와 차이가 있는지 보는 것이다.</p>
+<p>10 일 후.. 새로운 마음으로 다시 삽질을 시작하였다. <a href="https://bugs.swift.org/browse/SR-5968">스위프트 버그 이슈 트래커 사이트</a> 에서 한가지 단서를 찾아냈고(내가 찾은건 아니다 후후), 읽어 보니 현상은 나와 같다. 하지만 정확히 어떤 구문에서 이러한 문제가 있는지 알기 힘들었고 대충 while이 있고 self를 옵셔널 변수에 할당하는구나 정도로만 파악을 했다.
+아 우리 코드가 한두줄도 아니고 파일만 500개가 넘는데&hellip; 찾을 수 있을까? 낙담하며 거의 반 포기 해 갈즈음 optimization level 을 whole이 아닌 single로 하면 어떻게 되느냐는 질문을 누군가(아까 링크 찾아준 사람) 하였다. 이전에 해봤을 때 진행이 되는걸 봤기 때문에 심드렁 하게 빌드를 해봤다. 역시나 빌드가 되는듯 했지만 특정 파일에서 한결같이 넘어가지 못하고 있었다!! 아 유레카!! 이전에 single로 했을 때는 빌드가 잘 시작이 되길래 어련히 잘 끝나겠구나 하고 끝까지 기다리지 않았던 터라, 이렇게 일정 파일에서 못넘어 가는 현상을 못봤었던 것이다. 용의자는 추려졌고, 파일을 대강 훑어 봤더니 어라? while에서 nil 체크하는 구문이 있다.</p>
 
-<h3 id="self를-그냥-사용">self를 그냥 사용</h3>
-
-<pre><code>    DispatchQueue.global(qos: .userInitiated).async {
-        self.proArray.append(&quot;2&quot;)
-        self.proArray.append(&quot;3&quot;)
-        Thread.sleep(forTimeInterval: 10)
-
-        DispatchQueue.main.async {
-            self.proArray.removeLast()
-            print(self.proArray ?? &quot;&quot;)
-            self.indicator.stopAnimating()
-        }
-    }
+<pre><code>while scrollView == nil {
 </code></pre>
 
-<p>10초가 지난 후 메인 스레드 클로져가 실행된다. 당연히 클로져가 실행 된 후에 뷰 컨트롤러가 메모리에서 해제(deinit)된다.</p>
+<p>주석 걸고 빌드 해 봤더니 요녀석이 범인이였다. 아 애플느님 왜그러셨나요&hellip; while문 버그라니. 허탈하다. 재귀문으로 수정하고 아카이브가 잘 되는 걸 확인하니 속이 다 후련하여 일이 손에 안잡힌다. 하여 이렇게 일과시간에 블로그에 기록이나 하고 있었다. 애플은 점점 개발자들을 힘들게 하는데 재미가 들린듯 하다.</p>
 
-<h3 id="self를-weak-로-캡쳐한-후-optional로-사용">self를 weak 로 캡쳐한 후 optional로 사용</h3>
-
-<pre><code>    DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-        self?.proArray.append(&quot;2&quot;)
-        self?.proArray.append(&quot;3&quot;)
-        Thread.sleep(forTimeInterval: 10)
-
-        DispatchQueue.main.async {
-            self?.proArray.removeLast()
-            print(self?.proArray ?? &quot;&quot;)
-            self?.indicator.stopAnimating()
-        }
-    }
-</code></pre>
-
-<p>백 버튼을 누른 즉시 메모리에서 해제 되고, 10초가 지난 후에 아무일도 일어나지 않는다.</p>
-
-<h3 id="self를-weak-로-챕쳐한-후-guard-let-으로-사용">self를 weak 로 챕쳐한 후 guard let 으로 사용</h3>
-
-<pre><code>    DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-        guard let sSelf = self else { return }
-        sSelf.proArray.append(&quot;2&quot;)
-        sSelf.proArray.append(&quot;3&quot;)
-        Thread.sleep(forTimeInterval: 10)
-
-        DispatchQueue.main.async {
-            guard let sSelf = self else { return }
-            sSelf.proArray.removeLast()
-            print(sSelf.proArray)
-            sSelf.indicator.stopAnimating()
-        }
-    }
-</code></pre>
-
-<p>10초 뒤에 뷰컨트롤러가 메모리에서 해제 되며 메인 스레드 클로져는 실행되지 않는다.</p>
-
-<p>다만!!</p>
-
-<p>메인 스레드 클로져 안의 가드문(<code>guard let sSelf = self else { return }</code>, 위 코드에서 두번째 가드문)을 생략하게 되면 <code>self</code>를 그냥 사용 사용하였을 때와 같은 결과가 나타난다.</p>
-
-<h2 id="결론">결론</h2>
-
-<p>반드시 <code>[weak self]</code>를 사용해야 할까? 에 대한 답은 <em>반드시는 아니다</em> 이다. <code>self</code>의 라이프 사이클에 따라서 적절히 사용해 주면 된다. 위의 뷰 컨트롤러 처럼 <code>self</code>가 즉시 없어져야 하는 경우에는 <code>[weak self]</code>로 사용하고, 그 외의 경우에는 굳이 그러지 않아도 된다. 다만 마지막 케이스 처럼 이중 클로져 안에서의 가드문 사용은 각별히 주의 하도록 하자.</p>
+<p>오늘의 일기 끄읏</p>
 
 </div>
 
@@ -198,24 +146,32 @@ ga('send', 'pageview');
             <span>Tagged:</span>
             
             
-                <a href="/tags/ios/">ios</a>, 
+                <a href="/tags/ios11/">ios11</a>, 
             
-                <a href="/tags/gcd/">gcd</a>, 
+                <a href="/tags/xcode9/">xcode9</a>, 
             
                 <a href="/tags/swift/">swift</a>, 
             
-                <a href="/tags/weak-self/">weak self</a>, 
+                <a href="/tags/bug/">bug</a>, 
             
-                <a href="/tags/retain-cycle/">retain cycle</a>, 
+                <a href="/tags/while/">while</a>, 
             
-                <a href="/tags/closure/">closure</a>
+                <a href="/tags/compile/">compile</a>, 
+            
+                <a href="/tags/optimization-level/">optimization level</a>, 
+            
+                <a href="/tags/whole-module-optimization/">whole module optimization</a>, 
+            
+                <a href="/tags/archive/">archive</a>, 
+            
+                <a href="/tags/recursive/">recursive</a>
             
         </p>
     
 
     <div class="share">
         
-            <a class="icon-twitter" href="https://twitter.com/share?text=Should%20we%20use%20%5bweak%20self%5d%20in%20GCD&url=https%3a%2f%2fzeushin.github.io%2f2017%2f09%2f26%2fshould-we-use-weak-self-in-gcd%2f"
+            <a class="icon-twitter" href="https://twitter.com/share?text=Unfinished%20compile%20with%20iOS11%20SDK%20at%20archive&url=https%3a%2f%2fzeushin.github.io%2f2017%2f10%2f10%2funfinished-compile-on-ios11-sdk%2f"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fa fa-twitter"></i>
                 <span class="hidden">Twitter</span>
@@ -223,7 +179,7 @@ ga('send', 'pageview');
         
 
         
-            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzeushin.github.io%2f2017%2f09%2f26%2fshould-we-use-weak-self-in-gcd%2f"
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzeushin.github.io%2f2017%2f10%2f10%2funfinished-compile-on-ios11-sdk%2f"
                 onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                 <i class="fa fa-facebook"></i>
                 <span class="hidden">Facebook</span>
@@ -231,7 +187,7 @@ ga('send', 'pageview');
         
 
         
-            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fzeushin.github.io%2f2017%2f09%2f26%2fshould-we-use-weak-self-in-gcd%2f"
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fzeushin.github.io%2f2017%2f10%2f10%2funfinished-compile-on-ios11-sdk%2f"
               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
               <i class="fa fa-google-plus"></i>
                 <span class="hidden">Google+</span>
