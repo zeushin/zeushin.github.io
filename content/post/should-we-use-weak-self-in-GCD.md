@@ -4,6 +4,7 @@ title = "Should we use [weak self] in GCD"
 description = "GCD 안에서 반드시 weak self 를 사용해야 할까?"
 imgaes = ["/should-we-use-weak-self-in-GCD-01.png"]
 date = "2017-09-26T14:04:23+09:00"
+tags = ["ios", "gcd", "swift", "weak self", "retain cycle", "closure"]
 +++
 
 <img src="/should-we-use-weak-self-in-GCD-01.png" style="margin: auto">
