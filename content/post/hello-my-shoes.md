@@ -4,9 +4,9 @@ name = "Masher Shin"
 date = "2017-04-30T19:11:48+09:00"
 description = "나를 사랑하게 만드는 스토리 컬러링북"
 images = ["/hello-my-shoes-01.jpg"]
-
 +++
-<img src="/hello-my-shoes-01.jpg" height="400px">
+
+<img src="/hello-my-shoes-01.jpg" style="margin: auto">
 무려 내 여친느님이 낸 책이다. 글은 유명하신 '아네스 안' 작가님께서 쓰시고, 여자친구는 그림을 그렸다. 그림을 보면 알겠지만, 여자들이 좋아할 만하다. 매우 섬세하고 정교한 팬 터치는 보는 이(나같은 그림무식쟁이)로 하여금 현기증을 유발할 수 있으니 주의. 미국에서 낸 책도 '[빨간 구두(The Red Shoes)](https://www.amazon.com/Red-Shoes-Hans-Christian-Andersen/dp/1934429066/ref=sr_1_7?s=books&ie=UTF8&qid=1493548153&sr=1-7&keywords=red+shoes)'라는 제목의 책인데, 왜 또 신발인지는 알수 없다. (심지어 올해 생일 선물로는 신발을 사주어따...?!)
 
 정말 이쁘고 아름다운 그림체에 소녀 감성 가득가득한 내용이니 남자라면 여자친구에게 선물을, 여자라면 소장용으로 한권 정도 구매하여 칙칙한 내방 책장에 화사함을 불어 넣어 보는게 어떨까. 자세한 책의 내용은 아직 출판된지 얼마 안된 책의 스포가 될 수 있으니 생략한다.
