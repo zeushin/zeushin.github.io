@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <copyright>Masher Shin</copyright>
-    <lastBuildDate>Sun, 12 Mar 2017 17:35:04 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jul 2018 14:44:51 +0900</lastBuildDate>
     
 	<atom:link href="https://zeushin.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>회사 기술 블로그 제작</title>
+      <link>https://zeushin.github.io/2018/07/08/making-company-blog/</link>
+      <pubDate>Sun, 08 Jul 2018 14:44:51 +0900</pubDate>
+      
+      <guid>https://zeushin.github.io/2018/07/08/making-company-blog/</guid>
+      <description>RGP Tech Blog 현재 재직중인 RGP Korea의 테크조직하에 기술블로그를 제작하게 되었다.
+Hugo를 이용해서 제작하였으며, 현 블로그를 만들 때 경험을 최대한 살려서 제작하게 되었다.
+자세한 내용은 해당 블로그에 기술해 둔 포스팅인 기술 블로그 제작 후기 를 참고바란다.</description>
+    </item>
     
     <item>
       <title>메모 습관의 힘</title>
