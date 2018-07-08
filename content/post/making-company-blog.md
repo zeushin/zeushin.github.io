@@ -5,7 +5,7 @@ date: 2018-07-08T14:44:51+09:00
 description: "Hugo를 이용한 회사 기술 블로그 제작기"
 tags: ["hugo", "blog", "rgpkorea", "github", "pages", "블로그", "휴고", "요기요", "배달통"]
 imgaes: [/post/images/making-company-blog.jpg]
-draft: true
+draft: false
 ---
 
 ![rgpkorea_blog]
